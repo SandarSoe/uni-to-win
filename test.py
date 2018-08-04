@@ -7,59 +7,55 @@ class TestUNI2WIN(unittest.TestCase):
 
     def test_article_one(self):
         unicode = '''အပိုဒ် ၁
-        
-        လူတိုင်းသည် တူညီ လွတ်လပ်သော ဂုဏ်သိက္ခာဖြင့် လည်းကောင်း၊ တူညီလွတ်လပ်သော အခွင့်အရေးများဖြင့် လည်းကောင်း၊ မွေးဖွားလာသူများ ဖြစ်သည်။ 
-        ထိုသူတို့၌ ပိုင်းခြား ဝေဖန်တတ်သော ဉာဏ်နှင့် ကျင့်ဝတ် သိတတ်သော စိတ်တို့ရှိကြ၍ ထိုသူတို့သည် အချင်းချင်း မေတ္တာထား၍ ဆက်ဆံကျင့်သုံးသင့်၏။'''
+လူတိုင်းသည် တူညီ လွတ်လပ်သော ဂုဏ်သိက္ခာဖြင့် လည်းကောင်း၊ တူညီလွတ်လပ်သော အခွင့်အရေးများဖြင့် လည်းကောင်း၊ မွေးဖွားလာသူများ ဖြစ်သည်။ 
+ထိုသူတို့၌ ပိုင်းခြား ဝေဖန်တတ်သော ဉာဏ်နှင့် ကျင့်ဝတ် သိတတ်သော စိတ်တို့ရှိကြ၍ ထိုသူတို့သည် အချင်းချင်း မေတ္တာထား၍ ဆက်ဆံကျင့်သုံးသင့်၏။'''
         win = '''tydk'f 1
-
-        vlwdkif;onf wlnD vGwfvyfaom *kPfodu�mjzihf vnf;aumif;? wlnDvGwfvyfaom tcGihfta&;rsm;jzihf vnf;aumif;? arG;zGm;vmolrsm; jzpfonf/ 
-        xdkolwdkh� ydkif;jcm; a0zefwwfaom �mPfeSihf usihf0wf odwwfaom pdwfwdkh&Sdju� xdkolwdkhonf tcsif;csif; arw�mxm;� qufqHusihfokH;oihf\/'''
+vlwdkif;onf wlnD vGwfvyfaom *kPfodu�mjzihf vnf;aumif;? wlnDvGwfvyfaom tcGihfta&;rsm;jzihf vnf;aumif;? arG;zGm;vmolrsm; jzpfonf/ 
+xdkolwdkh� ydkif;jcm; a0zefwwfaom �mPfeSihf usihf0wf odwwfaom pdwfwdkh&Sdju� xdkolwdkhonf tcsif;csif; arw�mxm;� qufqHusihfokH;oihf\/'''
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed Converting Article One")
 
     def test_article_two(self):
         unicode = '''အပိုဒ် ၂
-        လူတိုင်းသည် လူ့အခွင့် အရေး ကြေညာစာတမ်းတွင် ဖော်ပြထားသည့် အခွင့်အရေး အားလုံး၊ လွတ်လပ်ခွင့် အားလုံးတို့ကို ပိုင်ဆိုင် ခံစားခွင့်ရှိသည်။ 
-        လူမျိုးနွယ်အားဖြင့် ဖြစ်စေ၊ အသားအရောင်အားဖြင့် ဖြစ်စေ၊ ကျား၊ မ၊ သဘာဝအားဖြင့် ဖြစ်စေ၊ ဘာသာစကားအားဖြင့် ဖြစ်စေ၊ 
-        ကိုးကွယ်သည့် ဘာသာအားဖြင့် ဖြစ်စေ၊ နိုင်ငံရေးယူဆချက်၊ သို့တည်းမဟုတ် အခြားယူဆချက်အားဖြင့် ဖြစ်စေ၊ နိုင်ငံနှင့် ဆိုင်သော၊ 
-        သို့တည်းမဟုတ် လူမှုအဆင့်အတန်းနှင့် ဆိုင်သော ဇစ်မြစ် အားဖြင့်ဖြစ်စေ၊ ပစ္စည်း ဥစ္စာ ဂုဏ်အားဖြင့် ဖြစ်စေ၊ 
-        မျိုးရိုးဇာတိအားဖြင့် ဖြစ်စေ၊ အခြား အဆင့်အတန်း အားဖြင့် ဖြစ်စေ ခွဲခြားခြင်းမရှိစေရ။ ထို့ပြင် လူတစ်ဦး တစ်ယောက် နေထိုင်ရာ 
-        နိုင်ငံ၏ သို့တည်းမဟုတ် နယ်မြေဒေသ၏ နိုင်ငံရေးဆိုင်ရာ ဖြစ်စေ စီရင်ပိုင်ခွင့်ဆိုင်ရာ ဖြစ်စေ တိုင်းပြည် အချင်းချင်း ဆိုင်ရာဖြစ်စေ၊ 
-        အဆင့်အတန်း တစ်ခုခုကို အခြေပြု၍ သော်လည်းကောင်း၊ ဒေသနယ်မြေတစ်ခုသည် အချုပ်အခြာ အာဏာပိုင် လွတ်လပ်သည့် နယ်မြေ၊ 
-        သို့တည်းမဟုတ် ကုလသမဂ္ဂ ထိန်းသိမ်း စောင့်ရှောက် ထားရသည့် နယ်မြေ၊ သို့တည်းမဟုတ် ကိုယ်ပိုင် အုပ်ချုပ်ခွင့် အာဏာတို့ 
-        တစိတ်တဒေသလောက်သာ ရရှိသည့် နယ်မြေ စသဖြင့် ယင်းသို့ သော နယ်မြေများ ဖြစ်သည် ဟူသော 
-        အကြောင်းကို အထောက်အထား ပြု၍ သော်လည်းကောင်း ခွဲခြားခြင်း လုံးဝ မရှိစေရ။'''
+လူတိုင်းသည် လူ့အခွင့် အရေး ကြေညာစာတမ်းတွင် ဖော်ပြထားသည့် အခွင့်အရေး အားလုံး၊ လွတ်လပ်ခွင့် အားလုံးတို့ကို ပိုင်ဆိုင် ခံစားခွင့်ရှိသည်။ 
+လူမျိုးနွယ်အားဖြင့် ဖြစ်စေ၊ အသားအရောင်အားဖြင့် ဖြစ်စေ၊ ကျား၊ မ၊ သဘာဝအားဖြင့် ဖြစ်စေ၊ ဘာသာစကားအားဖြင့် ဖြစ်စေ၊ 
+ကိုးကွယ်သည့် ဘာသာအားဖြင့် ဖြစ်စေ၊ နိုင်ငံရေးယူဆချက်၊ သို့တည်းမဟုတ် အခြားယူဆချက်အားဖြင့် ဖြစ်စေ၊ နိုင်ငံနှင့် ဆိုင်သော၊ 
+သို့တည်းမဟုတ် လူမှုအဆင့်အတန်းနှင့် ဆိုင်သော ဇစ်မြစ် အားဖြင့်ဖြစ်စေ၊ ပစ္စည်း ဥစ္စာ ဂုဏ်အားဖြင့် ဖြစ်စေ၊ 
+မျိုးရိုးဇာတိအားဖြင့် ဖြစ်စေ၊ အခြား အဆင့်အတန်း အားဖြင့် ဖြစ်စေ ခွဲခြားခြင်းမရှိစေရ။ ထို့ပြင် လူတစ်ဦး တစ်ယောက် နေထိုင်ရာ 
+နိုင်ငံ၏ သို့တည်းမဟုတ် နယ်မြေဒေသ၏ နိုင်ငံရေးဆိုင်ရာ ဖြစ်စေ စီရင်ပိုင်ခွင့်ဆိုင်ရာ ဖြစ်စေ တိုင်းပြည် အချင်းချင်း ဆိုင်ရာဖြစ်စေ၊ 
+အဆင့်အတန်း တစ်ခုခုကို အခြေပြု၍ သော်လည်းကောင်း၊ ဒေသနယ်မြေတစ်ခုသည် အချုပ်အခြာ အာဏာပိုင် လွတ်လပ်သည့် နယ်မြေ၊ 
+သို့တည်းမဟုတ် ကုလသမဂ္ဂ ထိန်းသိမ်း စောင့်ရှောက် ထားရသည့် နယ်မြေ၊ သို့တည်းမဟုတ် ကိုယ်ပိုင် အုပ်ချုပ်ခွင့် အာဏာတို့ 
+တစိတ်တဒေသလောက်သာ ရရှိသည့် နယ်မြေ စသဖြင့် ယင်းသို့ သော နယ်မြေများ ဖြစ်သည် ဟူသော 
+အကြောင်းကို အထောက်အထား ပြု၍ သော်လည်းကောင်း ခွဲခြားခြင်း လုံးဝ မရှိစေရ။'''
         win = '''tydk'f 2
-
-        vlwdkif;onf vlhtcGihf ta&; ajunmpmwrf;wGif azmfjyxm;onhf tcGihfta&; tm;vkH;? vGwfvyfcGihf tm;vkH;wdkhudk ydkifqdkif cHpm;cGihf&Sdonf/ 
-        vlrsdk;eG,ftm;jzihf jzpfap? tom;ta&miftm;jzihf jzpfap? usm;? r? obm0tm;jzihf jzpfap? bmompum;tm;jzihf jzpfap? 
-        udk;uG,fonhf bmomtm;jzihf jzpfap? edkifiHa&;,lqcsuf? odkhwnf;r[kwf tjcm;,lqcsuftm;jzihf jzpfap? edkifiHeSihf qdkifaom? 
-        odkhwnf;r[kwf vlrItqihftwef;eSihf qdkifaom Zpfjrpf tm;jzihfjzpfap? yp�nf; Op�m *kPftm;jzihf jzpfap? 
-        rsdk;&dk;Zmwdtm;jzihf jzpfap? tjcm; tqihftwef; tm;jzihf jzpfap cGJjcm;jcif;r&Sdap&/ xdkhjyif vlwpfOD; wpfa,muf aexdkif&m 
-        edkifiH\ odkhwnf;r[kwf e,fajra'o\ edkifiHa&;qdkif&m jzpfap pD&ifydkifcGihfqdkif&m jzpfap wdkif;jynf tcsif;csif; qdkif&mjzpfap? 
-        tqihftwef; wpfckckudk tajcjyk� aomfvnf;aumif;? a'oe,fajrwpfckonf tcskyftjcm tmPmydkif vGwfvyfonhf e,fajr? 
-        odkhwnf;r[kwf ukvor*� xdef;odrf; apmihfa&Smuf xm;&onhf e,fajr? odkhwnf;r[kwf udk,fydkif tkyfcskyfcGihf tmPmwdkh 
-        wpdwfwa'oavmufom &&Sdonhf e,fajr pojzihf ,if;odkh aom e,fajrrsm; jzpfonf [laom 
-        tajumif;udk taxmuftxm; jyk� aomfvnf;aumif; cGJjcm;jcif; vkH;0 r&Sdap&/'''
+vlwdkif;onf vlhtcGihf ta&; ajunmpmwrf;wGif azmfjyxm;onhf tcGihfta&; tm;vkH;? vGwfvyfcGihf tm;vkH;wdkhudk ydkifqdkif cHpm;cGihf&Sdonf/ 
+vlrsdk;eG,ftm;jzihf jzpfap? tom;ta&miftm;jzihf jzpfap? usm;? r? obm0tm;jzihf jzpfap? bmompum;tm;jzihf jzpfap? 
+udk;uG,fonhf bmomtm;jzihf jzpfap? edkifiHa&;,lqcsuf? odkhwnf;r[kwf tjcm;,lqcsuftm;jzihf jzpfap? edkifiHeSihf qdkifaom? 
+odkhwnf;r[kwf vlrItqihftwef;eSihf qdkifaom Zpfjrpf tm;jzihfjzpfap? yp�nf; Op�m *kPftm;jzihf jzpfap? 
+rsdk;&dk;Zmwdtm;jzihf jzpfap? tjcm; tqihftwef; tm;jzihf jzpfap cGJjcm;jcif;r&Sdap&/ xdkhjyif vlwpfOD; wpfa,muf aexdkif&m 
+edkifiH\ odkhwnf;r[kwf e,fajra'o\ edkifiHa&;qdkif&m jzpfap pD&ifydkifcGihfqdkif&m jzpfap wdkif;jynf tcsif;csif; qdkif&mjzpfap? 
+tqihftwef; wpfckckudk tajcjyk� aomfvnf;aumif;? a'oe,fajrwpfckonf tcskyftjcm tmPmydkif vGwfvyfonhf e,fajr? 
+odkhwnf;r[kwf ukvor*� xdef;odrf; apmihfa&Smuf xm;&onhf e,fajr? odkhwnf;r[kwf udk,fydkif tkyfcskyfcGihf tmPmwdkh 
+wpdwfwa'oavmufom &&Sdonhf e,fajr pojzihf ,if;odkh aom e,fajrrsm; jzpfonf [laom 
+tajumif;udk taxmuftxm; jyk� aomfvnf;aumif; cGJjcm;jcif; vkH;0 r&Sdap&/'''
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed Converting Article Two")
 
     def test_article_three(self):
         unicode  = '''အပိုဒ် ၃
-        လူတိုင်း၌ အသက်ရှင်ရန် လွတ်လပ်မှုခွင့်နှင့် လုံခြုံစိတ်ချခွင့် ရှိသည်။'''
+လူတိုင်း၌ အသက်ရှင်ရန် လွတ်လပ်မှုခွင့်နှင့် လုံခြုံစိတ်ချခွင့် ရှိသည်။'''
         win = '''tydk'f 3
-
-        vlwdkif;� touf&Sif&ef vGwfvyfrIcGihfeSihf vkHjckHpdwfcscGihf &Sdonf/'''
+vlwdkif;� touf&Sif&ef vGwfvyfrIcGihfeSihf vkHjckHpdwfcscGihf &Sdonf/'''
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed Converting Article Three")
 
     def test_article_four(self):
         unicode = '''အပိုဒ် ၄
-        မည်သူကိုမျှ ကျေးကျွန်အဖြစ်၊ သို့တည်းမဟုတ် အစေအပါးအဖြစ်၊ နိုင်ထက်စီးနင်း စေခိုင်းခြင်း မပြုရ၊ လူကို ကျေးကျွန်သဖွယ် အဓမ္မ စေခိုင်းခြင်း၊ 
-        အရောင်းအဝယ် ပြုခြင်းနှင့် ထိုသဘော သက်ရောက်သော လုပ်ငန်းဟူသမျှကို ပိတ်ပင် တားမြစ် ရမည်။'''
+မည်သူကိုမျှ ကျေးကျွန်အဖြစ်၊ သို့တည်းမဟုတ် အစေအပါးအဖြစ်၊ နိုင်ထက်စီးနင်း စေခိုင်းခြင်း မပြုရ၊ လူကို ကျေးကျွန်သဖွယ် အဓမ္မ စေခိုင်းခြင်း၊ 
+အရောင်းအဝယ် ပြုခြင်းနှင့် ထိုသဘော သက်ရောက်သော လုပ်ငန်းဟူသမျှကို ပိတ်ပင် တားမြစ် ရမည်။'''
         win = '''tydk'f 4
-        rnfoludkrsS aus;usGeftjzpf? odkhwnf;r[kwf taptyg;tjzpf? edkifxufpD;eif; apcdkif;jcif; rjyk&? vludk aus;usGefozG,f t"r� apcdkif;jcif;? 
-        ta&mif;t0,f jykjcif;eSihf xdkoabm oufa&mufaom vkyfief;[lorsSudk ydwfyif wm;jrpf &rnf/'''
+rnfoludkrsS aus;usGeftjzpf? odkhwnf;r[kwf taptyg;tjzpf? edkifxufpD;eif; apcdkif;jcif; rjyk&? vludk aus;usGefozG,f t"r� apcdkif;jcif;? 
+ta&mif;t0,f jykjcif;eSihf xdkoabm oufa&mufaom vkyfief;[lorsSudk ydwfyif wm;jrpf &rnf/'''
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed Converting Article Four")
 
@@ -68,7 +64,6 @@ class TestUNI2WIN(unittest.TestCase):
 မည်သူကိုမျှ ညှဉ်းပန်း နှိပ်စက်ခြင်း၊ သို့တည်းမဟုတ် ရက်စက်ကြမ်းကြုတ်စွာ လူမဆန်စွာ ဂုဏ်ငယ်စေသော ဆက်ဆံမှု မပြုရ၊ 
 သို့တည်းမဟုတ် အပြစ်ဒဏ် ပေးခြင်းမပြုရ။'''
         win = '''tydk'f 5
-
 rnfoludkrsS nS�f;yef; eSdyfpufjcif;? odkhwnf;r[kwf &ufpufjurf;jukwfpGm vlrqefpGm *kPfi,fapaom qufqHrI rjyk&? 
 odkhwnf;r[kwf tjypf'Pf ay;jcif;rjyk&/'''
         result = uni2win.convert(unicode)
@@ -78,7 +73,6 @@ odkhwnf;r[kwf tjypf'Pf ay;jcif;rjyk&/'''
         unicode = '''အပိုဒ် ၆
 လူတိုင်းတွင် ဥပဒေအရာ၌ လူပုဂ္ဂိုလ်တစ်ဦး အဖြစ်ဖြင့် အရာခပ်သိမ်းတွင် အသိအမှတ် ပြုခြင်းကို ခံယူပိုင်ခွင့်ရှိသည်။'''
         win = '''tydk'f 6
-
 vlwdkif;wGif Oya't&m� vlyk*�dkvfwpfOD; tjzpfjzihf t&mcyfodrf;wGif todtrSwf jykjcif;udk cH,lydkifcGihf&Sdonf/'''
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed Converting Article Six")
@@ -89,7 +83,6 @@ vlwdkif;wGif Oya't&m� vlyk*�dkvfwpfOD; tjzpfjzihf t&mcyfodrf;wGif todtrSwf j
 ဤကြေညာ စာတမ်းပါ သဘောတရားများကို ဖီဆန်၍ ခွဲခြားခြင်းမှ လည်းကောင်း၊ ထိုသို့ခွဲခြားခြင်းကို လှုံ့ဆော်ခြင်းမှ လည်းကောင်း၊ 
 ကင်းလွတ် စေရန် အကာအကွယ်ကို တူညီစွာ ခံစားပိုင်ခွင့် ရှိသည်။'''
         win = '''tydk'f 7
-
 vltm;vkH;wdkhonf Oya't&m� wlnDjuonhftjyif? Oya'\ tumtuG,fudk jcm;em;jcif; rcH&apbJ wlnDpGm cHpm;ydkifcGihf&Sdonf/ 
 �ajunm pmwrf;yg oabmw&m;rsm;udk zDqef� cGJjcm;jcif;rS vnf;aumif;? xdkodkhcGJjcm;jcif;udk vIHhaqmfjcif;rS vnf;aumif;? 
 uif;vGwf ap&ef tumtuG,fudk wlnDpGm cHpm;ydkifcGihf &Sdonf/'''
@@ -102,7 +95,6 @@ uif;vGwf ap&ef tumtuG,fudk wlnDpGm cHpm;ydkifcGihf &Sdonf/'''
 ချိုးဖောက် ဖျက်ဆီးခြင်းခံခဲ့ရလျှင် ထိုသို့ ချိုးဖောက်ဖျက်ဆီး သော ပြုလုပ်မှုကြောင့် ဖြစ်ပေါ်လာသော နစ်နာချက် အတွက် 
 ထိုသူသည် နိုင်ငံဆိုင်ရာ အာဏာပိုင်တရားရုံးတွင် ထိရောက်စွာ သက်သာခွင့် ရှိနိုင်စေရမည်။'''
         win = '''tydk'f 8
-
 zGJhpnf;ykH tajccHOya'u aomfvnf;aumif; tjcm; Oya'u aomfvnf;aumif; vlwdkif;twGuf ay;xm;onhf tajccH tcGihfta&; rsm;onf 
 csdk;azmuf zsufqD;jcif;cHcJh&vsSif xdkodkh csdk;azmufzsufqD; aom jykvkyfrIajumihf jzpfay:vmaom epfemcsuf twGuf 
 xdkolonf edkifiHqdkif&m tmPmydkifw&m;&kH;wGif xda&mufpGm oufomcGihf &Sdedkifap&rnf/'''
@@ -113,7 +105,6 @@ xdkolonf edkifiHqdkif&m tmPmydkifw&m;&kH;wGif xda&mufpGm oufomcGihf &Sdedkifap&r
         unicode = '''အပိုဒ် ၉
 မည်သူမျှ ဥပဒေအရ မဟုတ်သော ဖမ်းဆီးခြင်းကို ဖြစ်စေ၊ ချုပ်နှောင်ခြင်းကို ဖြစ်စေ၊ ပြည်နှင်ခြင်းကိုဖြစ်စေ မခံစေရ။'''
         win = '''tydk'f 9
-
 rnfolrsS Oya't& r[kwfaom zrf;qD;jcif;udk jzpfap? cskyfaeSmifjcif;udk jzpfap? jynfeSifjcif;udkjzpfap rcHap&/'''
         result = uni2win.convert(unicode)
         self.assertEqual(win, result, "Failed Converting Article Nine")
@@ -123,7 +114,6 @@ rnfolrsS Oya't& r[kwfaom zrf;qD;jcif;udk jzpfap? cskyfaeSmifjcif;udk jzpfap? jyn
 အခွင့်အရေးများနှင့် တာဝန် ဝတ္တရားများကို အဆုံးအဖြတ်ခံရာတွင် လည်းကောင်း၊ ပြစ်မှုကြောင့် တရားစွဲဆို စီရင် ဆုံးဖြတ်ခံရာတွင် လည်းကောင်း၊ 
 လူတိုင်းသည် လွတ်လပ်၍ ဘက်မလိုက်သော တရားရုံးတော်၏ လူအများ ရှေ့မှောက်တွင် မျှတစွာ ကြားနာစစ်ဆေးခြင်းကို တူညီစွာ ခံစား ပိုင်ခွင့်ရှိသည်။'''
         win = '''tydk'f 10
-
 tcGihfta&;rsm;eSihf wm0ef 0w�&m;rsm;udk tqkH;tjzwfcH&mwGif vnf;aumif;? jypfrIajumihf w&m;pGJqdk pD&if qkH;jzwfcH&mwGif vnf;aumif;? 
 vlwdkif;onf vGwfvyf� bufrvdkufaom w&m;&kH;awmf\ vltrsm; a&SharSmufwGif rsSwpGm jum;emppfaq;jcif;udk wlnDpGm cHpm; ydkifcGihf&Sdonf/'''
         result = uni2win.convert(unicode)
@@ -138,7 +128,6 @@ vlwdkif;onf vGwfvyf� bufrvdkufaom w&m;&kH;awmf\ vltrsm; a&SharSmufwGif rsSwpGm
 ပျက်ကွက်မှုအရ ဆွဲဆိုပြစ်ပေးခြင်း မပြုရ။ ထို့အပြင် ပြစ်မှုကျူးလွန်စဉ်အခါက ထိုက်သင့်စေနိုင်သော အပြစ်ဒဏ်ထက်ပိုမိုကြီးလေးသော 
 အပြစ်ဒဏ်ကို ထိုက်သင့်ခြင်းမရှိစေရ။'''
         win = '''tydk'f 11
-
 vltrsm; a&SharSmuf� Oya'twdkif; ppfaq;� jypfrIusl;vGefonf[k xif&Sm; pD&ifjcif;cH&onhf tcsdeftxd jypfrIeSihf w&m;pGJqdkjcif; cH&olwdkif;onf 
 tjypfrJhol[l� ,lq jcif;cHxdkufonhf tcGihfta&;&Sdonf/ xdktrIudk jum;emppfaq;&m0,f pGyfpGJcH&onhf jypfrItwGuf ckcHacsyedkif&ef 
 vdktyfaom tcGihfta&;rsm;udk xdkoltm; ay;jyD; jzpfap&rnf/
@@ -155,7 +144,6 @@ tjypf'Pfudk xdkufoihfjcif;r&Sdap&/'''
 ထို့ပြင် မိမိ၏ဂုဏ်သိက္ခာ ကိုလည်း အထက်ပါ အတိုင်း ပုတ်ခတ်ခြင်း မခံစေရ။ လူတိုင်းတွင် ထိုသို့ ဝင်ရောက်စွက်ဖက်ခြင်းမှ သော်လည်းကောင်း 
 ပုတ်ခတ်ခြင်းမှ သော်လည်းကောင်း ဥပဒေအရ ကာကွယ် ပိုင်ခွင့်ရှိသည်။'''
         win = '''tydk'f 12
-
 rnfolrsS rdrdoabmtwdkif; at;csrf;vGwfvyfpGm aexdkifjcif;udk aomfvnf;aumif;? rdrd\ rdom;pkudk aomfvnf;aumif;? 
 rdrd\ aetdrf todkuft0ef;udk aomfvnf;aumif;? pmay;pm,ludk aomfvnf;aumif;? Oya't& r[kwfaom 0ifa&muf pGufzufjcif; rcHap&/ 
 xdkhjyif rdrd\*kPfodu�m udkvnf; txufyg twdkif; ykwfcwfjcif; rcHap&/ vlwdkif;wGif xdkodkh 0ifa&mufpGufzufjcif;rS aomfvnf;aumif; 
@@ -169,7 +157,6 @@ ykwfcwfjcif;rS aomfvnf;aumif; Oya't& umuG,f ydkifcGihf&Sdonf/'''
 လူတိုင်းတွင် မိမိနေထိုင်ရာ တိုင်းပြည်မှ လည်းကောင်း၊ အခြားတိုင်းပြည်မှလည်းကောင်း ထွက်ခွာ သွားပိုင်ခွင့်ရှိသည့်အပြင်၊
 မိမိ၏ တိုင်းပြည်သို့ ပြန်လာ ပိုင်ခွင့်လည်းရှိသည်။'''
         win = '''tydk'f 13
-
 vlwdkif;wGif rdrd\edkifiH e,fedrdwf twGif;� vGwfvyfpGm oGm;vm a&GShajymif; edkifcGihf? aexdkifcGihf&Sdonf/
 vlwdkif;wGif rdrdaexdkif&m wdkif;jynfrS vnf;aumif;? tjcm;wdkif;jynfrSvnf;aumif; xGufcGm oGm;ydkifcGihf&Sdonhftjyif?
 rdrd\ wdkif;jynfodkh jyefvm ydkifcGihfvnf;&Sdonf/'''
@@ -182,7 +169,6 @@ rdrd\ wdkif;jynfodkh jyefvm ydkifcGihfvnf;&Sdonf/'''
 နိုင်ငံရေးနှင့် မပတ်သက်သည့် ပြစ်မှုများမှ သော်လည်းကောင်း၊ ကုလသမဂ္ဂ၏ ရည်ရွက်ချက်နှင့် သဘောတရား မှုများကို ဖီဆန်သော အမှုများမှ သော်လည္းကောင်း၊ 
 အမှန် ပေါ်ပေါက် လာသော ပြစ်မှုကြောင့် တရားစွဲဆိုခြင်း ခံရသည့် အမှုအခင်းများတွင် အထက်ပါ အခွင့်အရေးကို အသုံးမပြုနိုင်စေရ။'''
         win = '''tydk'f 14
-
 vlwdkif;onf nS�f;yef; eSdyfpuf cHae&jcif;rS vGwfuif;&ef tjcm;wdkif;jynf rsm;� at;csrf;pGm cdkvIHaeedkifcGihf&Sdonf/
 edkifiHa&;eSihf rywfoufonhf jypfrIrsm;rS aomfvnf;aumif;? ukvor*�\ &nf&GufcsufeSihf oabmw&m; rIrsm;udk zDqefaom trIrsm;rS aomfvn;faumif;? 
 trSef ay:ayguf vmaom jypfrIajumihf w&m;pGJqdkjcif; cH&onhf trItcif;rsm;wGif txufyg tcGihfta&;udk tokH;rjykedkifap&/'''
@@ -195,7 +181,6 @@ trSef ay:ayguf vmaom jypfrIajumihf w&m;pGJqdkjcif; cH&onhf trItcif;rsm;wGif txuf
 ဥပဒေအရ မဟုတ်လျှင် မည်သူမျှ မိမိ၏ နိုင်ငံသားအဖြစ်ကို စွန့်လွှတ်ခြင်း မခံစေရ၊ နိုင်ငံသားအဖြစ် 
 ပြောင်းလဲနိုင်သောအခွင့်အရေးကို လည်း ငြင်းပယ်ခြင်း မခံစေရ။'''
         win = '''tydk'f 15
-
 vlwdkif;onf? edkifiH wpfedkifiH\ edkifiHom;tjzpf cH,lcGihf&Sdonf/
 Oya't& r[kwfvsSif rnfolrsS rdrd\ edkifiHom;tjzpfudk pGehfvGSwfjcif; rcHap&? edkifiHom;tjzpf 
 ajymif;vJedkifaomtcGihfta&;udk vnf; jiif;y,fjcif; rcHap&/'''
@@ -212,7 +197,6 @@ ajymif;vJedkifaomtcGihfta&;udk vnf; jiif;y,fjcif; rcHap&/'''
 မိသားစု တစ်ခုသည် လူ့အဖွဲ့အစည်း၏ သဘာ၀ကျသော အခြေခံအဖွဲ့တစ်ရပ်ဖြစ်သည်၊ ထိုမိသားစုသည် 
 လူ့ အဖွဲ့အစည်းနှင့် အစိုးရတို့၏ ကာကွယ်စောင့်ရှောက်ခြင်းကို ခံယူခွင့်ရှိသည်။'''
         win = '''tydk'f 16
-
 t&G,fa&muf jyD;aom a,musmf; eSihf rdef;rwdkhwGif vlrsdk;udk aomfvnf;aumif;? edkifiHom; tjzpfudk aomfvnf;aumif; udk;uG,fonhf bmomudk aomfvnf;aumif;? 
 tajumif;jyk� cskyfcs,f uehfowfjcif; r&SdbJ? xdrf;jrm;edkifcGihf eSihf rdom;pkxlaxmifedkifcGihf&Sdonf/ tqdkyg a,musmf;eSihf rdef;r wdkhonf vifr,m;tjzpf 
 aygif;oif;aep�f tcsdef twGif;� aomfvnf;aumif;? tdrfaxmifudk zsufodrf;� uGm&Sif;juonhf tcg�vnf;aumif;? 
@@ -228,7 +212,6 @@ vlh tzGJhtpnf;eSihf tpdk;&wdkh\ umuG,fapmihfa&Smufjcif;udk cH,lcGihf&Sdonf/'''
 လူတိုင်းတွင် မိမိ တစ်ဦးချင်းသော်လည်းကောင်း ၊ အခြားသူများနှင့် ဖက်စပ်၍ သော်လည်းကောင်း၊ ပစ္စည်းဥစ္စာ တို့ကို ပိုင်ဆိုင်ရန် အခွင့်အရေးရှိရမည်။ 
 ဥပဒေအရ မဟုတ်လျှင်၊ မည်သူမျှ မိမိ၏ပစ္စည်းဥစ္စာပိုင်ဆိုင်ခွင့်ကို စွန့်လွှတ်ခြင်း မခံစေရ။'''
         win = '''tydk'f 17
-
 vlwdkif;wGif rdrd wpfOD;csif;aomfvnf;aumif; ? tjcm;olrsm;eSihf zufpyf� aomfvnf;aumif;? yp�nf;Op�m wdkhudk ydkifqdkif&ef tcGihfta&;&Sd&rnf/ 
 Oya't& r[kwfvsSif? rnfolrsS rdrd\yp�nf;Op�mydkifqdkifcGihfudk pGehfvGSwfjcif; rcHap&/'''
         result = uni2win.convert(unicode)
@@ -242,7 +225,6 @@ Oya't& r[kwfvsSif? rnfolrsS rdrd\yp�nf;Op�mydkifqdkifcGihfudk pGehfvGSwfjcif
 ရှေ့မှောက်တွင် မဟုတ်ဘဲ သော်လည်းကောင်း၊ မိမိ ကိုးကွယ်သော ဘာသာကို သို့တည်းမဟုတ် သက်ဝင် ယုံကြည်ချက်ကို လွတ်လပ် စွာ သင်ပြနိုင်ခွင့်၊ 
 ကျင့်သုံးနိုင်ခွင့်၊ ဝတ်ပြုကိုးကွယ်နိုင်ခွင့်နှင့် ဆောက်တည် နိုင်ခွင့်တို့လည်း ပါဝင်သည်။'''
         win = '''tydk'f 18
-
 vlwdkif;wGif vGwfvyfpGm awG;ac: juHqedkifcGihf? vGwfvyfpGm cH,l&yfwnfedkifcGihf eSihf vGwfvyfpGm ouf0if udk;uG,fedkifcGihf&Sdonf/ 
 tqdkyg tcGihfta&;rsm;� rdrdudk;uG,fonhf bmomudk odkhwnf;r[kwf ouf0if,kHjunfcsufudk vGwfvyfpGm ajymif;vJedkifcGihf yg0ifonhf 
 tjyif rdrd wpfa,mufcsif;jzpfap? tjcm;olrsm;eSihf pkaygif;�jzpfap? jynfoltrsm; a&SharSmufwGif aomfvnf;aumif;? 
@@ -258,7 +240,6 @@ usihfokH;edkifcGihf? 0wfjykudk;uG,fedkifcGihfeSihf aqmufwnf edkifcGihfwdkhvnf; y
 နိုင်ငံနယ်နိမိတ်များကို ထောက်ထားရန် မလိုဘဲ သတင်းအကြောင်းအရာနှင့် 
 သဘောတရားများကို တနည်းနည်း ဖြင့် လွတ်လပ်စွာ ရှာယူဆည်းပူးနိုင်ခွင့်၊ လက်ခံနိုင်ခွင့်နှင့် ဝေငှ ဖြန့်ချိခွင့်တို့လည်း ပါဝင်သည်။'''
         win = '''tydk'f 19
-
 vlwdkif;wGif vGwfvyfpGm xifjrif ,lqedkifcGihfeSihf vGwfvyfpGm zGihf[ azmfjyedkifcGihf&Sdonf/ tqdkyg tcGihfta&;rsm;� 
 taeSmihf t,Sufr&SdbJ vGwfvyfpGm xifjrif,lqedkifcGihf yg0if onhftjyif? 
 edkifiHe,fedrdwfrsm;udk axmufxm;&ef rvdkbJ owif;tajumif;t&meSihf 
@@ -271,7 +252,6 @@ oabmw&m;rsm;udk wenf;enf; jzihf vGwfvyfpGm &Sm,lqnf;yl;edkifcGihf? vufcHedkifcGi
 လူတိုင်းတွင် လွတ်လပ် အေးချမ်းစွာ စုဝေးနိုင်ခွင့် နှင့် ဖွဲ့စည်းနိုင်ခွင့် တို့ ရှိသည်။
 မည်သူ့ကိုမျှ အဖွဲ့အစည်းတစ်ခုသို့ ဝင်စေရန် အတင်းအကျပ်မပြုရ။'''
         win = '''tydk'f 20
-
 vlwdkif;wGif vGwfvyf at;csrf;pGm pka0;edkifcGihf eSihf zGJhpnf;edkifcGihf wdkh &Sdonf/
 rnfolhudkrsS tzGJhtpnf;wpfckodkh 0ifap&ef twif;tusyfrjyk&/'''
         result = uni2win.convert(unicode)
@@ -285,7 +265,6 @@ rnfolhudkrsS tzGJhtpnf;wpfckodkh 0ifap&ef twif;tusyfrjyk&/'''
 စစ်မှန်သောရွေးကောက်ပွဲများဖြင့် ထင်ရှားစေရမည်။ ရွေးကောက် ပွဲများတွင်လည်း လူတိုင်းအညီအမျှ ဆန္ဒမဲ ပေးနိုင်ခွင့် ရှိရမည့်အပြင် ၊ 
 ထိုရွေးကောက်ပွဲများကို လျှို့ဝှက် မဲပေး စနစ်ဖြင့် ဖြစ်စေ၊ အလားတူ လွတ်လပ်သော မဲပေးစနစ် ဖြင့်ဖြစ်စေ ကျင်းပရမည်။'''
         win = '''tydk'f 21
-
 vlwdkif;wGif rdrdedkifiH\ tkyfcskyfa&;� udk,fwdkifjzpfap? vGwfvyfpGm a&G;cs,fvdkufonhf udk,fpm;vS,frsm;rS wpfqihfjzpfap yg0if aqmif&GufedkifcGihf &Sdonf/
 vlwdkif;wGif rdrd\edkifiH&Sd jynfolh 0efxrf;tzGJh� 0ifa&mufedkif&ef wlnDonhf tcGihf ta&;&Sdonf/
 jynfoljynfom;wdkh\ qe�onf tkyfcskyf tmPm\ tajccHjzpf&rnf? tqdkyg qe�udk tcsdefumvydkif;jcm;vsuf 
@@ -301,7 +280,6 @@ xdka&G;aumufyGJrsm;udk vsSdkh0Suf rJay; pepfjzihf jzpfap? tvm;wl vGwfvyfaom rJay
 ထိုလူ၏ ဂုဏ်သိက္ခာနှင့် စရိုက်လက္ခဏာ လွတ်လပ်စွာ တိုးတက်မြင့်မားရေးအတွက် မရှိမဖြစ်လိုအပ်သော 
 စီးပွားရေး၊လူမှုရေးနှင့် ယဉ်ကျေးမှု အခွင့်အရေးများကို သုံးစွဲပိုင်ခွင့်ရှိသည်။'''
         win = '''tydk'f 22
-
 vlwdkif;wGif vlhtzGJhtpnf;\ tzGJh0ifwpfOD;taeeSihf vlrIa&;vkHjckHcGihf&,lydkihfcGihf&Sdonhf tjyifedkifiHa&; judk;yrf;rIjzihfjzpfap? 
 edkifiHwum ylaygif;aqmif&GufrIjzihfjzpfap? edkifiHtoD;oD;\zGJhpnf;ykHeSihf vnf;aumif;? o,HZmw tiftm;eSihfvnf;aumif; 
 xdkvl\ *kPfodu�meSihf p&dkufvu�Pm vGwfvyfpGm wdk;wufjrihfrm;a&;twGuf r&Sdrjzpfvdktyfaom 
@@ -319,7 +297,6 @@ pD;yGm;a&;?vlrIa&;eSihf ,�faus;rI tcGihfta&;rsm;udk okH;pGJydkifcGihf&Sdonf/''
 လူမှုရေး အထောက်အပံ့ကိုလည်း ထပ်မံ၍ ရပိုင်ခွင့် ရှိသည်။
 လူတိုင်းတွင် မိမိအကျိုး ခံစားခွင့်ကို ကာကွယ်ရန် အလုပ်သမား အစည်းအရုံးများ ဖွဲ့စည်းခွင့် ၊ ပါဝင် ဆောင်ရွက်ခွင့် ရှိသည်။'''
         win = '''tydk'f 23
-
 vlwdkif;wGif tvkyfvkyf &efvnf;aumif;? rdrdeSpfouf&m toufarG;rI tvkyf tudkifudk vGwfvyfpGma&G;cs,f&ef vnf;aumif;? 
 w&m;rsSw� vkyfaysmfaom tvkyfcGif\ tajctaeudk &&Sd&ef vnf;aumif;? tvkyfvufrJh jzpf&jcif;rS tumtuG,f &&Sd&ef vnf;aumif; tcGihfta&;&Sdonf/
 vlwdkif;wGif cGJjcm;jcif;rcH&apbJ? wlnDaom tvkyftwGuf wlnDaom tcaju;aiG &ydkifcGihf&Sdonf/
@@ -335,7 +312,6 @@ vlwdkif;wGif rdrdtusdk; cHpm;cGihfudk umuG,f&ef tvkyform; tpnf;t&kH;rsm; zGJhpnf
 လူတိုင်းတွင် သင့်မြတ်လျော်ကန်စွာ ကန့်သတ်ထားသည့် အလုပ်လုပ်ချိန် အပြင်၊ လစာနှင့်တကွ အခါကာလအားလျော်စွာ သတ်မှတ် ထားသည့် 
 အလုပ် အားလပ်ရက်များပါဝင်သည့် အနားယူခွင့်နှင့် အားလပ်ခွင့် ခံစားပိုင်ခွင့် ရှိသည်။'''
         win = '''tydk'f 24
-
 vlwdkif;wGif oihfjrwfavsmfuefpGm uehfowfxm;onhf tvkyfvkyfcsdef tjyif? vpmeSihfwuG tcgumvtm;avsmfpGm owfrSwf xm;onhf 
 tvkyf tm;vyf&ufrsm;yg0ifonhf tem;,lcGihfeSihf tm;vyfcGihf cHpm;ydkifcGihf &Sdonf/'''
         result = uni2win.convert(unicode)
@@ -353,7 +329,6 @@ tvkyf tm;vyf&ufrsm;yg0ifonhf tem;,lcGihfeSihf tm;vyfcGihf cHpm;ydkifcGihf &Sdonf
 ဥပဒေအရ ထိမ်းမြားခြင်းဖြင့်ဖြစ်စေ အခြား နည်းဖြင့် ဖြစ်စေ မွေးဖွားသော ကလေးအားလုံး သည် တူညီသော 
 လူမှု ကာကွယ် စောင့်ရှောက်ရေးကို ရယူ ခံစားကြရမည်။'''
         win = '''tydk'f 25
-
 vlwdkif;wGif rdrdeSihfwuG rdrd\ rdom;pk usef;rma&;eSihfwuG udk,fpdwfeSpfjzm at;csrf;pGm aexdkifedkifa&; twGuf tpmt[m&? t0wftxnf aetdrf? 
 aq;0g; tultnDeSihf vdktyfonhf vlrI taxmuftyHhrsm; yg0ifaom oihfawmf avsSmufywfonhf vlrI tqihftwef;udk &,lcHpm;cGihf &Sdonf/ 
 xdkhjyif tvkyfvufrJhjzpfaom tcg� aomfvnf;aumif;? rusef;rrm jzpfaom tcg� aomfvnf;aumif;? 
@@ -377,7 +352,6 @@ vlrI umuG,f apmihfa&Smufa&;udk &,l cHpm;ju&rnf/'''
 ထို့ပြင် ငြိမ်းချမ်းရေး တည်တံ့အောင် ဆောင်ရွက်ရန် အလို့ငှါ၊ ကုလသမဂ္ဂ၏ ဆောင်ရွက်မှုများကိုလည်း ဖြစ်မြောက် အောင် အားပေးရမည်။
 မိဘတို့တွင်၊ မိမိတို့၏ ကလေးများ သင်ယူရမည့်ပညာ အမျိုးအစားကို ရွေးချယ်နိုင်သော လက်ဦး အခွင့်အရေးရှိသည်။'''
         win = '''tydk'f 26
-
 vlwdkif;onf ynmoif ,ledkifcGihf&Sdonf? tenf;qkH;rlvwef;eSihf tajccH tqihf twef;rsm;wGif ynm oifjum;a&;onf tcrJhjzpf&rnf/ 
 rlvwef;ynmonf roifrae& ynm jzpf&rnf/ pufrIvufrIynmeSihf toufarG;rI ynmrsm;udk a,bl,stm;jzihf oifjum;&,l edkifap&rnf/ 
 xdkhjyif txufwef;ynmtwGuf t&nftcsif;udk tajccHjyk� wlnDaom tcGihfta&; &&Sdap&rnf/
@@ -396,7 +370,6 @@ rdbwdkhwGif? rdrdwdkh\ uav;rsm; oif,l&rnhfynm trsdk;tpm;udk a&G;cs,fedkifaom vuf
 လူတိုင်းတွင် သိပ္ပံမှ ဖြစ်စေ၊ စာပေမှဖြစ်စေ၊ သုခုမပညာမှ ဖြစ်စေ၊ မိမိကိုယ်ပိုင်ဉာဏ်ဖြင့်ကြံစည် ဖန်တီးမှုမှ ဖြစ်ထွန်းလာသည့် 
 ဂုဏ်နှင့် ငွေကြေး အကျိုးအမြတ်များကို ခံစားရယူနိုင်ရန် အခွင့်အရေး အတွက် ကာကွယ်မှုကို ရရှိရန် အခွင့်အရေး ရှိသည်။'''
         win = '''tydk'f 27
-
 vlwdkif;wGif oufqdkif&m ,�faus;rI avmu� vGwfvyfpGm yg0ifaqmif &GufedkifcGihf okckrynm&yf rsm;udkvGwfvyfpGmvdkufpm; arGhavsmfedkifcGihf? 
 ody�H ynmxGef;um;a&; vkyfief;rsm;wGif vGwfvyfpGm 0ifa&muf vkyfudkif edkifcGihfeSihf xdkynm\ tusdk; tmedoifrsm;udk vGwfvyfpGm cHpm;okH;pGJedkifcGihf &Sdonf/
 vlwdkif;wGif ody�HrS jzpfap? pmayrSjzpfap? okckrynmrS jzpfap? rdrdudk,fydkif�mPfjzihfjuHpnf zefwD;rIrS jzpfxGef;vmonhf 
@@ -409,7 +382,6 @@ vlwdkif;wGif ody�HrS jzpfap? pmayrSjzpfap? okckrynmrS jzpfap? rdrdudk,fydkif�
 လူတိုင်းသည် ဤကြေညာ စာတမ်းတွင် ဖော်ပြထားသည့် အခွင့်အရေးများ နှင့် လွတ်လပ်ခွင့်များကို အပြည့်အစုံ ရယူနိုင်သော လူမှု ဆက်ဆံရေး 
 အခြေအနေနှင့် အပြည်ပြည်ဆိုင်ရာ ဆက်ဆံရေး အခြေအနေတို့၏ အကျိုးကျေးဇူးကို ခံစားနိုင်ခွင့် ရှိသည်။'''
         win = '''tydk'f 28
-
 vlwdkif;onf �ajunm pmwrf;wGif azmfjyxm;onhf tcGihfta&;rsm; eSihf vGwfvyfcGihfrsm;udk tjynhftpkH &,ledkifaom vlrI qufqHa&; 
 tajctaeeSihf tjynfjynfqdkif&m qufqHa&; tajctaewdkh\ tusdk;aus;Zl;udk cHpm;edkifcGihf &Sdonf/'''
         result = uni2win.convert(unicode)
@@ -425,7 +397,6 @@ tajctaeeSihf tjynfjynfqdkif&m qufqHa&; tajctaewdkh\ tusdk;aus;Zl;udk cHpm;edkifc
 အဆိုပါ အခွင့်အရေးများနှင့် လွတ်လပ် ခွင့်များကို မည်သည့် အမှုကိစ္စတွင်မျှ ကုလသမဂ္ဂ၏ ရည်ရွယ်ချက်များနှင့်လည်းကောင်း၊ 
 အခြေခံမူများနှင့် လည်းကောင်း ဆန့်ကျင်၍ မသုံးစွဲရ။'''
         win = '''tydk'f 29
-
 rdrd\p&dkufvu�Pm vGwfvyfpGm zGHhjzdk; wdk;wufedkifonhf wpfckwnf;aom vlhtodkuft0ef; twGufvlwdkif;� wm0ef &Sdonf/
 rdrd\ tcGihfta&;rsm;eSihf vGwfvyf cGihfrsm;udk okH;pGJ&mwGif vlwdkif;onf? tjcm;olrsm;\ tcGihfta&;rsm;eSihfvGwfvyfcGihfrsm;udktodtrSwfjyk� 
 &dkaoav;pm;ap&eftvdkhiSm vnf;aumif;? 'Drdkua&pDusihfokH;aom vlhtzGJhtpnf;wGif udk,fusihfw&m;tjyif? 
@@ -441,15 +412,12 @@ tajccHrlrsm;eSihf vnf;aumif; qehfusif� rokH;pGJ&/'''
 ဤကြေညာစာတမ်းပါ အခွင့်အရေးနှင့်တကွ လွတ်လပ်ခွင့်များ ပျက်စီးရာပျက်စီးကြောင်းတို့ကိုရည်ရွယ်၍၊ နိုင်ငံတစ်နိုင်ငံ အတွက် ဖြစ်စေ၊ လူတစ်စုအတွက် ဖြစ်စေ၊ 
 လူတစ်ဦးတစ်ယောက် အတွက် ဖြစ်စေ ပါဝင် ဆောင်ရွက်ရန် အခွင့်ရှိသည်ဟု သော်လည်းကောင်း၊ 
 ကိုယ်တိုင်ဆောင်ရွက်ရန် အခွင့်ရှိသည် ဟုသော်လည်းကောင်းအဓိပ္ပါယ် ပိုင်းခြားကောက်ယူခြင်း မရှိစေရ။'''
-        win = ''''''
-
-
-
-
-
-
-
-
+        win = '''tydk'f 30
+�ajunmpmwrf;yg tcGihfta&;eSihfwuG vGwfvyfcGihfrsm; ysufpD;&mysufpD;ajumif;wdkhudk&nf&G,f�? edkifiHwpfedkifiH twGuf jzpfap? 
+vlwpfpktwGuf jzpfap? vlwpfOD;wpfa,muf twGuf jzpfap yg0if aqmif&Guf&ef tcGihf&Sdonf[k aomfvnf;aumif;? 
+udk,fwdkifaqmif&Guf&ef tcGihf&Sdonf [kaomfvnf;aumif;t"dy�g,f ydkif;jcm;aumuf,ljcif; r&Sdap&/'''
+        result = uni2win.convert(unicode)
+        self.assertEqual(win, result, "Failed Converting Article Thirty")
 
 if __name__ == "__main__":
     unittest.main()
