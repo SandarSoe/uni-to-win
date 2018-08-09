@@ -48,19 +48,19 @@ def replace(input):
     output = re.sub(u'\u102c', u'\u006d', output)# yay_char
     output = re.sub(u'\u102d', u'\u0064', output)# longgyitin
     output = re.sub(u'\u102e', u'\u0044', output)# longgyitin_sanke
-    output = re.sub(u'\u102f', u'\u004b', output)# 1_chuang_ngin
-    output = re.sub(u'\u1030', u'\u004c', output)# 2_chuang_ngin
+    output = re.sub(u'\u102f', u'\u004B', output)# 1_chuang_ngin
+    output = re.sub(u'\u1030', u'\u004C', output)# 2_chuang_ngin
     output = re.sub(u'\u1031', u'\u0061', output)#ta_wai_htoe
     output = re.sub(u'\u1032', u'\u004a',  output)#naut_htoe_pyit
     output = re.sub(u'\u1036', u'\u0048',  output)#taytay_tin
-    output = re.sub(u'\u1037', u'u\0068', output)# aut_ka__myit
+    output = re.sub(u'\u1037', u'\u0068', output)# aut_ka__myit
     output = re.sub(u'\u1038', u'\u003b', output)#wa_sa_paut
     output = re.sub(u'\u103a', u'\u0066', output)# nga_tat
     output = re.sub(u'\u103b', u'\u0073', output)# ya_pint
     output = re.sub(u'\u103c', u'\u006A', output)  # ya_yit
     output = re.sub(u'\u103d', u'\u0047', output)#wa_swe
     output = re.sub(u'\u103e', u'\u0053', output)# ha_toe
-    output = re.sub(u'\u1003f', u'\u00f3', output)#ta_gy
+    output = re.sub(u'\u103f', u'\u00f3', output)#ta_gy
 
 
     # nunbers
@@ -147,6 +147,8 @@ def logical2visual(input):
     # 8=aumyit
     # 9=yaychar
     output = re.sub(u'([\u1000-\u1021])((?:\u103c)?)((?:\u103b)?)((?:\u103d)?)((?:\u103e)?)((?:\u1031)?)((?:\u103a)?)((?:\u1037)?)((:\u102c)?)','\\6\\2\\1\\3\\4\\5\\7\\8\\9', output)
+    output = re.sub(u'(\u1021)((?:[\u102d\u102f])?)\u102f', u'\\1\\2\u006b', output)
+
 
     # nga_that and wasapout
     output = re.sub(u'\u1038\u1039', u'\u1039\u1038', output)
@@ -212,7 +214,7 @@ def convert(input):
     output = logical2visual(input)
     output = shape(output)
     output = replace(output)
-    output = decompose(input)
+    output = decompose(output)
 
     return output
 
